@@ -1,0 +1,193 @@
+@font-face {
+  font-family: 'PaytoneOne-Regular';
+  src: url("./fonts/PaytoneOne-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "PaytoneOne-Regular", Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: whitesmoke;
+  width: 100%;
+  min-height: 100%;
+}
+
+.banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #87abe6;
+  font-size: 2rem;
+  height: 7rem;
+  padding: 0.8rem;
+  padding-right: 5rem;
+}
+
+.navBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  padding: 1rem;
+  font-size: 1.3rem;
+  background-color: black;
+  color: whitesmoke;
+}
+
+.navBar .navElement {
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navBar .navElement:hover {
+  background-color: #7e7e7e;
+}
+
+.navBar .navElement:visited {
+  color: inherit;
+}
+
+.mainPage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainPage .homePage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  max-width: 80%;
+  height: 50%;
+}
+
+.welcomeBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 2rem;
+}
+
+.welcomeBlock .welcomeTitle {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.welcomeBlock .welcomeBody {
+  max-width: 70%;
+  text-align: center;
+  font-size: 130%;
+}
+
+.themeList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 0;
+  list-style: none;
+  max-width: 50%;
+  -webkit-transform: translate(50%);
+          transform: translate(50%);
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.themeList .themeButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 12rem;
+  min-height: 12rem;
+  margin: 1rem;
+  background-color: #87abe6;
+  border-radius: 20px;
+}
+
+.themeList .themeButton .themeIcons {
+  font-size: 4rem;
+  padding: 1.5rem;
+}
+
+.themeList .themeButton .themeName {
+  text-align: center;
+  font-size: 120%;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  padding-top: 2rem;
+  list-style: none;
+}
+
+.footer .footerElement {
+  padding: 0.5rem 2rem;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
