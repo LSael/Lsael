@@ -1,6 +1,10 @@
-const Theme = (props) => {
+import { useParams } from "react-router-dom";
+
+const Theme = () => {
+    const { slug } = useParams();
+
     return ( 
-        <h1>Ceci est le theme {props.id}</h1>
+        <h1>Ceci est le theme {slug}</h1>
      );
 }
  

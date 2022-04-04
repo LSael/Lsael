@@ -10,7 +10,7 @@ const Main = () => {
         <div className="mainPage">
         <Routes>
             <Route path="/" element={<Home />} />
-                <Route path="/theme/:themeId" element={<Theme/>} />
+                <Route path="/theme/:slug" element={<Theme />} />
             <Route path="/tableaudebord" element={<Board />} />
             <Route path="/bilan" element={<Analytics />} />
             <Route path="/about" element={<About />} />
