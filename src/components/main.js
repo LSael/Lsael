@@ -3,13 +3,14 @@ import Home from './main/home';
 import Board from './main/board';
 import Analytics from "./main/analytics";
 import About from './main/about/about';
-import ThemeListing from "./main/home/theme";
+import Theme from "./main/home/theme";
 
 const Main = () => {
     return ( 
         <div className="mainPage">
         <Routes>
             <Route path="/" element={<Home />} />
+                <Route path="/theme/:themeId" element={<Theme/>} />
             <Route path="/tableaudebord" element={<Board />} />
             <Route path="/bilan" element={<Analytics />} />
             <Route path="/about" element={<About />} />
