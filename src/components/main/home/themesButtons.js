@@ -8,8 +8,8 @@ library.add(fas)
 const ThemesButtons = () => {
     const themeList = data.themes.map((theme) => {
         return (
-                <Link to={`/theme/${theme.id}`}>           
-                    <li className='themeButton' key={theme.id}>
+                <Link to={`/theme/${theme.id}`}  key={theme.id}>           
+                    <li className='themeButton'>
                         <div>
                             <FontAwesomeIcon icon={theme.icon} className='themeIcons' />
                             <p className='themeName'>{theme.name}</p>

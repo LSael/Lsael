@@ -4,7 +4,17 @@
             {
                 "id" : "health",
                 "name" : "santé",
-                "icon" : "landmark"
+                "icon" : "landmark",
+                "articles" : [
+                    {
+                        "id" : "a1",
+                        "name" : "covidtest",
+                        "title" : "Taux de contamination COVID-19",
+                        "description" : "",
+                        "content" : "",
+                        "apiLink" : ""
+                    }
+                ]
             },
             {
                 "id" : "economy",
@@ -20,16 +30,6 @@
                 "id" : "politics",
                 "name" : "politique",
                 "icon"  :"person-booth"
-            }
-        ],
-    "articles" : [
-            {
-                "id" : "a1",
-                "name" : "covidtest",
-                "title" : "Taux de contamination COVID-19",
-                "description" : "",
-                "content" : "",
-                "apiLink" : ""
             }
         ]
 }
