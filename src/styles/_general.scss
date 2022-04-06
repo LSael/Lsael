@@ -4,6 +4,15 @@
     font-family: $default-font-family;
 }
 
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+a:visited {
+    color: inherit;
+}
+
 body {
     background-color: $white-classic;
     width: 100%;
@@ -95,11 +104,54 @@ body {
             font-size: 120%;
         }
     }
+    .themeButton:hover {
+        border: 2px black solid;
+    }
 }
 
 .themeCategory {
-    
-}
+    @include generic-center;
+    width: 80%;
+    flex-direction: column;
+    .themeCategoryIcon {
+        font-size: 4rem;
+        padding: 2rem;
+        margin: 3rem;
+        border-radius: 20px;
+        background-color: $blue-background;
+        }
+    .themeCategoryList {
+        width: 80%;
+        @include generic-center;
+        .articleButton {
+            background-color: lightgray;
+            border-radius: 20px;
+            padding: 1rem;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            grid-template-rows: auto;
+            grid-template-areas: 
+            "icone title"
+            "icone description";
+            .articleButtonIcon {
+                grid-area: icone;
+                margin: auto;
+                font-size: 300%;
+            }
+            .articleButtonTitle {
+                grid-area: title;
+                margin-left: 1rem; 
+            }
+            .articleButtonDescription {
+                grid-area: description;
+                margin-left: 1rem; 
+            }
+        }
+        .articleButton:hover {
+            border: 2px black solid;
+        }
+    }
+    }
 
 .footer {
     display: flex;

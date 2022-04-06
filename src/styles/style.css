@@ -9,6 +9,15 @@
   font-family: "PaytoneOne-Regular", Arial, Helvetica, sans-serif;
 }
 
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+
 body {
   background-color: whitesmoke;
   width: 100%;
@@ -167,6 +176,88 @@ body {
 .themeList .themeButton .themeName {
   text-align: center;
   font-size: 120%;
+}
+
+.themeList .themeButton:hover {
+  border: 2px black solid;
+}
+
+.themeCategory {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.themeCategory .themeCategoryIcon {
+  font-size: 4rem;
+  padding: 2rem;
+  margin: 3rem;
+  border-radius: 20px;
+  background-color: #87abe6;
+}
+
+.themeCategory .themeCategoryList {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.themeCategory .themeCategoryList .articleButton {
+  background-color: lightgray;
+  border-radius: 20px;
+  padding: 1rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+      grid-template-areas: "icone title" "icone description";
+}
+
+.themeCategory .themeCategoryList .articleButton .articleButtonIcon {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: icone;
+  margin: auto;
+  font-size: 300%;
+}
+
+.themeCategory .themeCategoryList .articleButton .articleButtonTitle {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: title;
+  margin-left: 1rem;
+}
+
+.themeCategory .themeCategoryList .articleButton .articleButtonDescription {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: description;
+  margin-left: 1rem;
+}
+
+.themeCategory .themeCategoryList .articleButton:hover {
+  border: 2px black solid;
 }
 
 .footer {

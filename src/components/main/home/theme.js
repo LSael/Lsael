@@ -1,5 +1,9 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import data from '../../database/db.json';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+library.add(fas)
 
 const Theme = () => {
     const { slug } = useParams();
@@ -12,14 +16,17 @@ const Theme = () => {
     if (dataTheme[0].articles.length > 0) {
         return ( 
             <div className="themeCategory">
-                <h1>Ceci est le theme {dataTheme[0].id}</h1>
-                <ul>
+                <FontAwesomeIcon icon={dataTheme[0].icon} className="themeCategoryIcon"/>
+                <ul className="themeCategoryList">
                     {dataTheme[0].articles.map((article) => {
                         return (
-                            <div className="articleButton" key={article.id}>
-                                <h3>{article.name}</h3>
-                                <p>{article.description}</p>
-                            </div>
+                            <Link to={`/theme/${slug}/${article.id}`} key={article.id}>
+                                <div className="articleButton">
+                                    <FontAwesomeIcon icon={article.icon} className="articleButtonIcon"/>
+                                    <h2 className="articleButtonTitle">{article.name}</h2>
+                                    <p className="articleButtonDescription">{article.description}</p>
+                                </div>
+                            </Link>
                         )
                     })}
                 </ul>
@@ -28,7 +35,7 @@ const Theme = () => {
     } else {
         return (
             <div className="themeCategory">
-                <h1>Ceci est le theme {dataTheme[0].id}</h1>
+                <FontAwesomeIcon icon={dataTheme[0].icon} className="themeCategoryIcon"/>
                 <p className="noArticle">Il n'y a pas encore d'article dans cette catégorie, veuillez nous
                 excuser pour la géne occasionnée :)</p>
             </div>
