@@ -3,11 +3,11 @@
         [
             {
                 "id" : "sante",
-                "name" : "santé",
+                "name" : "Santé",
                 "icon" : "landmark",
                 "articles" : [
                     {
-                        "id" : "a1",
+                        "id" : "testcovid",
                         "name" : "Test Covid",
                         "title" : "Taux de contamination COVID-19",
                         "description" : "Graphique représentant le taux de contamination du Covid-19 en France sur les 7 derniers jours",
@@ -19,19 +19,19 @@
             },
             {
                 "id" : "economie",
-                "name" : "économie",
+                "name" : "Économie",
                 "icon"  :"hospital",
                 "articles" : []
             },
             {
                 "id" : "sport",
-                "name" : "sport",
+                "name" : "Sport",
                 "icon"  :"futbol",
                 "articles" : []
             },
             {
                 "id" : "politique",
-                "name" : "politique",
+                "name" : "Politique",
                 "icon"  :"person-booth",
                 "articles" : []
             }
