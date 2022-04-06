@@ -10,7 +10,7 @@
                         "id" : "a1",
                         "name" : "covidtest",
                         "title" : "Taux de contamination COVID-19",
-                        "description" : "",
+                        "description" : "Graphique représentant le taux de contamination en France sur les 7 derniers jours",
                         "content" : "",
                         "apiLink" : ""
                     }
@@ -19,17 +19,20 @@
             {
                 "id" : "economy",
                 "name" : "économie",
-                "icon"  :"hospital"
+                "icon"  :"hospital",
+                "articles" : []
             },
             {
                 "id" : "sport",
                 "name" : "sport",
-                "icon"  :"futbol"
+                "icon"  :"futbol",
+                "articles" : []
             },
             {
                 "id" : "politics",
                 "name" : "politique",
-                "icon"  :"person-booth"
+                "icon"  :"person-booth",
+                "articles" : []
             }
         ]
 }
