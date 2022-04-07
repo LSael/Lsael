@@ -1,3 +1,5 @@
+import axios from "axios";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import data from "../../database/db.json"
 
@@ -10,8 +12,33 @@ const ArticleText = (props) => {
     )
 }
 
+    /*const [blague,setBlague] = useState('');
+    useEffect(() => {
+        axios.get('https://api.blablagues.net/?rub=blagues')
+        .then((response) => setBlague(response.data.data.content.text_head));
+},[]) 
+
+    return ( 
+        <div className="homePage">
+            <p>{blague}</p>
+        </div>
+     );
+}
+*/
+
 const ArticleChart = (props) => {
-    
+    const today = new Date();
+    console.log(today);
+    const [state,setState] = useState('');
+    let testList = [];
+    useEffect(() => {
+        axios.get(`https://coronavirusapifr.herokuapp.com/data/live/france`)
+        .then((response) => {testList.push(response.data[0])})
+        .then(console.log(testList))
+    }, [])
+    return (
+        <p></p>
+    )
 }
 
 const Article = () => {
@@ -29,6 +56,7 @@ const Article = () => {
     return ( 
         <div className="article">
             <ArticleText data={dataArticle[0]} />
+            <ArticleChart />
         </div>
      );
 }

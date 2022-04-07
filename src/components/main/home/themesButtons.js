@@ -26,9 +26,3 @@ const ThemesButtons = () => {
 }
  
 export default ThemesButtons;
-
-/*
-Buttons pour les themes (nom_des_themes, icones_des_themes)
-    => Buttons pour les articles (titre_article, description_article)
-        => Article/Appel API (contenu_article, appel_API)
-*/
