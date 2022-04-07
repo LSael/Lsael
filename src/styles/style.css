@@ -207,7 +207,7 @@ body {
   background-color: #87abe6;
 }
 
-.themeCategory .themeCategoryList {
+.themeCategory .articleList {
   width: 85%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -220,7 +220,7 @@ body {
           align-items: center;
 }
 
-.themeCategory .themeCategoryList .articleButton {
+.themeCategory .articleList .articleButton {
   background-color: lightgray;
   border-radius: 20px;
   padding: 1rem;
@@ -233,7 +233,7 @@ body {
       grid-template-areas: "icone title" "icone description";
 }
 
-.themeCategory .themeCategoryList .articleButton .articleButtonIcon {
+.themeCategory .articleList .articleButton .articleButtonIcon {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   -ms-grid-column: 1;
@@ -242,21 +242,21 @@ body {
   font-size: 300%;
 }
 
-.themeCategory .themeCategoryList .articleButton .articleButtonTitle {
+.themeCategory .articleList .articleButton .articleButtonTitle {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: title;
   margin-left: 1rem;
 }
 
-.themeCategory .themeCategoryList .articleButton .articleButtonDescription {
+.themeCategory .articleList .articleButton .articleButtonDescription {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: description;
   margin-left: 1rem;
 }
 
-.themeCategory .themeCategoryList .articleButton:hover {
+.themeCategory .articleList .articleButton:hover {
   border: 2px black solid;
 }
 

@@ -13,7 +13,8 @@
                         "description" : "Graphique représentant le taux de contamination du Covid-19 en France sur les 7 derniers jours",
                         "icon" : "chart-line",
                         "content" : "",
-                        "apiLink" : ""
+                        "apiLink" : "",
+                        "text" : "Ce graphique représente le taux de contamination du Covid-19 en France sur les 7 derniers jours"
                     }
                 ]
             },

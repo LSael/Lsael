@@ -1,6 +1,19 @@
 import { useParams } from "react-router-dom";
 import data from "../../database/db.json"
 
+const ArticleText = (props) => {
+    return (
+        <div className="articleHead">
+            <h2 className="articleTitle">{props.data.name}</h2>
+            <p className="articleText">{props.data.text}</p>
+        </div>
+    )
+}
+
+const ArticleChart = (props) => {
+    
+}
+
 const Article = () => {
     const { articleSlug,slug } = useParams();
     const dataTheme = data.themes.filter((theme) => {
@@ -14,7 +27,9 @@ const Article = () => {
         }
     });
     return ( 
-        <h1>Wesh gros ! t'es sur l'article {dataArticle[0].name} mon frère ! </h1>
+        <div className="article">
+            <ArticleText data={dataArticle[0]} />
+        </div>
      );
 }
  

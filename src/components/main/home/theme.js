@@ -17,7 +17,7 @@ const Theme = () => {
         return ( 
             <div className="themeCategory">
                 <FontAwesomeIcon icon={dataTheme[0].icon} className="themeCategoryIcon"/>
-                <ul className="themeCategoryList">
+                <ul className="articleList">
                     {dataTheme[0].articles.map((article) => {
                         return (
                             <Link to={`/theme/${slug}/${article.id}`} key={article.id}>
