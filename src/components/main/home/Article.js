@@ -12,32 +12,17 @@ const ArticleText = (props) => {
     )
 }
 
-    /*const [blague,setBlague] = useState('');
-    useEffect(() => {
-        axios.get('https://api.blablagues.net/?rub=blagues')
-        .then((response) => setBlague(response.data.data.content.text_head));
-},[]) 
-
-    return ( 
-        <div className="homePage">
-            <p>{blague}</p>
-        </div>
-     );
-}
-*/
-
 const ArticleChart = (props) => {
-    const today = new Date();
-    console.log(today);
-    const [state,setState] = useState('');
-    let testList = [];
+/*     const today = new Date();
+    console.log(today.toLocaleDateString('fr-FR')); */
+    const [state,setState] = useState();
     useEffect(() => {
-        axios.get(`https://coronavirusapifr.herokuapp.com/data/live/france`)
-        .then((response) => {testList.push(response.data[0])})
-        .then(console.log(testList))
-    }, [])
+        axios.get('https://raw.githubusercontent.com/nsppolls/nsppolls/master/presidentielle.json')
+        .then((response) => {setState(response.data.pop())})
+        .then(console.log(state))
+    },[])
     return (
-        <p></p>
+        <p>test</p>
     )
 }
 
