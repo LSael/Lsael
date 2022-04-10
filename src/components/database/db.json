@@ -6,16 +6,6 @@
                 "name" : "Santé",
                 "icon" : "landmark",
                 "articles" : [
-                    {
-                        "id" : "testcovid",
-                        "name" : "Test Covid",
-                        "title" : "Taux de contamination COVID-19",
-                        "description" : "Graphique représentant le taux de contamination du Covid-19 en France sur les 7 derniers jours",
-                        "icon" : "chart-line",
-                        "content" : "",
-                        "apiLink" : "",
-                        "text" : "Ce graphique représente le taux de contamination du Covid-19 en France sur les 7 derniers jours"
-                    }
                 ]
             },
             {
@@ -34,7 +24,18 @@
                 "id" : "politique",
                 "name" : "Politique",
                 "icon"  :"person-booth",
-                "articles" : []
+                "articles" : [
+                    {
+                    "id" : "secondtour2022",
+                    "name" : "Second tour de la présidentielle 2022",
+                    "title" : "Présidentielle 2022",
+                    "description" : "Intentions de vote au second tour",
+                    "icon" : "chart-line",
+                    "content" : "",
+                    "apiLink" : "",
+                    "text" : "Intentions de vote au second tour"
+                }
+            ]
             }
         ]
 }

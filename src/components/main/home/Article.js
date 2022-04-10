@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import Chart from 'chart.js/auto';
 import { Doughnut } from "react-chartjs-2";
 import { useParams } from "react-router-dom";
 import data from "../../database/db.json"
@@ -24,17 +25,29 @@ const ArticleChart = () => {
         .then((response) => {
             const dataResponse = response.data.pop()
             setChartData(dataResponse)
-            setlabels(dataResponse.tours[1].hypotheses[0].candidats.map((candidat) => {return (candidat.candidat)}))
-            setdataSets(dataResponse.tours[1].hypotheses[0].candidats.map((candidat) => {return (candidat.intentions)}))
+            setlabels(dataResponse.tours[0].hypotheses[0].candidats.map((candidat) => {return (candidat.candidat)}))
+            setdataSets(dataResponse.tours[0].hypotheses[0].candidats.map((candidat) => {return (candidat.intentions)}))
         })
     },[])
+
+    const data = {
+        labels : labels,
+        datasets : [{
+            label : "% d'intentions de vote",
+            data : dataSets,
+            backgroundColor : ['rgb(135, 171, 230)','rgb(221, 195, 231)']
+        }],
+        options : {
+            responsive : true
+        }
+    }
 
     console.log(chartData,labels,dataSets)
 
     return (
-        <div>
-            <h3>Source : {chartData.nom_institut}</h3>
-            <p>test {chartData.id}</p>
+        <div className="articleChart">
+            <h5 className="articleChartSource">Source : {chartData.nom_institut}</h5>
+            <Doughnut className="articleChartChart" datasetIdKey="id" data={data} />
         </div>
     )
 }

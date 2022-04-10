@@ -23,7 +23,7 @@ const Theme = () => {
                             <Link to={`/theme/${slug}/${article.id}`} key={article.id}>
                                 <div className="articleButton">
                                     <FontAwesomeIcon icon={article.icon} className="articleButtonIcon"/>
-                                    <h2 className="articleButtonTitle">{article.name}</h2>
+                                    <h2 className="articleButtonTitle">{article.title}</h2>
                                     <p className="articleButtonDescription">{article.description}</p>
                                 </div>
                             </Link>
