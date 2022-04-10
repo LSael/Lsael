@@ -12,17 +12,21 @@ const ArticleText = (props) => {
     )
 }
 
-const ArticleChart = (props) => {
-/*     const today = new Date();
-    console.log(today.toLocaleDateString('fr-FR')); */
-    const [state,setState] = useState();
+const ArticleChart = () => {
+    const [chartData,setChartData] = useState(''); 
+    /* un argument dans useState est indispensable pour que le composant puisse faire un 
+    premier rendu, sinon il renvoie undifined et crash */
     useEffect(() => {
         axios.get('https://raw.githubusercontent.com/nsppolls/nsppolls/master/presidentielle.json')
-        .then((response) => {setState(response.data.pop())})
-        .then(console.log(state))
+        .then((response) => {setChartData(response.data.pop())})
     },[])
+
+    console.log(chartData)
     return (
-        <p>test</p>
+        <div>
+            <h3>Source : {chartData.nom_institut}</h3>
+            <p>test {chartData.id}</p>
+        </div>
     )
 }
 
