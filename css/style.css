@@ -3,11 +3,124 @@
     src: url("./font/Raleway-VariableFont_wght.ttf");
 }
 
-/* @media screen and (min-width:1200) {
+@media screen and (min-width:1200px) {
+    .main-activities-thumbnail {
+        width: 385px;
+    }
+    .main-lodgings {
+        width: 2/3;
+    }
+    .main-favorites {
+        width: 1/3;
+    }
+
+    #activity-1 {
+        height: 500px;
+        transform:  scale(1.2) translate(0,-8%);
+        object-position: 50% 75px;
+    }
+    
+    #activity-2 {
+        height: 200px;
+        object-position: 50% 40%;
+    }
+    
+    #activity-3 {
+        height: 180px;
+        object-position: 50% 15%;
+    }
+    
+    #activity-4 {
+        height: 500px;
+        transform:  scale(1.2) translate(0,-8%);
+        object-position: 50% 75px;
+    }
+    
+    #activity-5 {
+        height: 200px;
+        object-position: 50% 10%;
+    }
+    
+    #activity-6 {
+        height: 140px;
+        object-position: 50% 0%;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .main-products {
+        flex-direction: column-reverse;
+    }
     .main-activities-thumbnail-list {
-        height: 580px;
-    }  
-} */
+        flex-direction: column;
+    }
+    .main-activities-thumbnail-list a {
+        width: auto;
+    }
+    .main-activities-images {
+        height: 200px;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .main-lodgings-thumbnail {
+        width: 32%;
+    }
+    .header {
+        padding: 2.45% 4.5%;
+        justify-content: space-between;
+    }
+    .header-logo {
+        width: 7%;
+    }
+    .header-nav-element {
+        padding: 45px 25px;
+        margin: 0 10px 0 25px;
+        font-size: 130%;
+    }
+    .header-nav-element:hover {
+        border-top: 3px solid var(--blue-main);
+        color: var(--blue-main);
+    }
+}
+
+@media screen and (max-width:992px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 5%;
+    }
+    .header-logo {
+        width: 25%;
+    }
+    .header-nav {
+        display: flex;
+        width: 100%;
+        margin: 4%;
+    }
+    .header-nav-element {
+        text-align: center;
+        font-size: 120%;
+        padding: 3.5%;
+        width: 100%;
+    }
+    .header-nav-element:hover {
+        border-bottom: 3px solid var(--blue-main);
+        color: var(--blue-main);
+    }
+    .main-lodgings-thumbnail {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .main-lodgings-thumbnail {
+        width: 100%;
+    }
+    .footer {
+        flex-direction: column;
+    }
+}
 
 * {
     box-sizing: border-box;
@@ -22,13 +135,6 @@
 }
 /* switch fonts with font-weight:200 (extralight) 500 (medium) or 600 (bold) */
 
-/* html {
-    width: 1200px;
-} */
-
-.header, .main {
-    margin: 0 3.75%;
-  }
 
 a {
     text-decoration: none;
@@ -38,30 +144,17 @@ ul {
     list-style: none;
 }
 
+
 .header {
     display: flex;
-    justify-content: space-between;
-    padding: 2.25% 0;
-    padding-left: 2%;
-}
-
-.header-logo {
-    width: 7%;
 }
 
 .header-nav {
     padding-top: 0.35%;
 }
 
-.header-nav-element {
-    padding: 45px 25px;
-    margin: 0 10px 0 25px;
-    font-size: 130%;
-}
-
-.header-nav-element:hover {
-    border-top: 3px solid var(--blue-main);
-    color: var(--blue-main);
+.main {
+    margin: 0 3.75%;
 }
 
 .main-title-div {
@@ -184,10 +277,9 @@ ul {
 
 .main-products {
     display: flex;
-    justify-content: center;
 }
 
-.main-products-titles {
+.main-lodgings-titles {
     font-size: 180%;
 }
 
@@ -195,7 +287,6 @@ ul {
     background-color: var(--grey);
     border-radius: 25px;
     padding: 3.3% 3% 3% 3%;
-    margin-right: 3%;
     margin-left: 0.5%;
 }
 
@@ -207,26 +298,30 @@ ul {
     margin: 3% 0 2.2% 0;
 }
 
-.main-products-thumbnail {
-    width: 320px;
+.main-lodgings-thumbnail, .main-favorites-thumbnail, .main-activities-thumbnail {
+    box-shadow: 5px 5px 13px 0px #D1D3D6;
+}
+
+.main-lodgings-thumbnail {
     background-color: white;
     margin-bottom: 3.5%;
     border: 6px solid white;
     border-radius: 20px;
     transition: 500ms;
+    box-shadow: 5px 5px 13px 0px #D1D3D6;
 }
 
-.main-products-thumbnail:hover {
+.main-lodgings-thumbnail:hover {
     transform: scale(1.1);
 }
 
-.main-products-elements {
+.main-lodgings-elements {
     display: flex;
     flex-direction: column;
     margin: 5px 15px;
 }
 
-.main-products-elements h3, .main-products-elements span {
+.main-lodgings-elements h3, .main-lodgings-elements span {
     margin: 5px 0;
 
 }
@@ -248,7 +343,6 @@ ul {
 .main-favorites {
     background-color: var(--grey);
     border-radius: 25px;
-    width: 40%;
     padding: 3.3% 2.8% 0;
 }
 
@@ -269,7 +363,7 @@ ul {
 }
 
 .main-favorites-thumbnail {
-    width: 450px;
+    width: 100%;
     border: 6px solid white;
     margin: 5% 0;
     border-radius: 30px;
@@ -318,7 +412,6 @@ ul {
 .main-activities {
     margin: 4.8% 0;
     padding-left: 0.5%;
-    width: 100%;
 }
 
 .main-activities-title {
@@ -327,20 +420,22 @@ ul {
 }
 
 .main-activities-thumbnail-list {
-    height: 580px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-activities-thumbnail-list div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-content: space-between;
-    flex-wrap: wrap;
 }
 
 .main-activities-thumbnail {
-    width: 395px;
     border: 2px solid var(--grey);
     border-radius: 30px;
     transition: 500ms;
     overflow: hidden;
+    width: 385px;
 }
 
 .main-activities-thumbnail:hover {
@@ -351,46 +446,13 @@ ul {
     padding: 6.5%;
 }
 
-.main-activities-thumbnail img {
-    width: 100%;
+.main-activities-images {
     object-fit: cover;
     border-radius: 30px 30px 0 0 ;
+    width: 100%;
 }
-
-#activity-1 {
-    height: 500px;
-    transform:  scale(1.2) translate(0,-8%);
-    object-position: 50% 75px;
-}
-
-#activity-2 {
-    height: 235px;
-    object-position: 50% 40%;
-}
-
-#activity-3 {
-    height: 140px;
-    object-position: 50% 15%;
-}
-
-#activity-4 {
-    height: 500px;
-    transform:  scale(1.2) translate(0,-8%);
-    object-position: 50% 75px;
-}
-
-#activity-5 {
-    height: 175px;
-    object-position: 50% 10%;
-}
-
-#activity-6 {
-    height: 200px;
-    object-position: 50% 0%;
-}
-
+ 
 .footer {
-
     width: 100%;
     background-color: var(--grey);
     display: flex;
