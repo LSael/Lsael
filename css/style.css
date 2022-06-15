@@ -4,14 +4,17 @@
 }
 
 @media screen and (min-width:1200px) {
-    .main-activities-thumbnail {
-        width: 385px;
+    .main-activities-column {
+        width: 23%;
+    }
+    .main-products {
+        justify-content: space-between;
     }
     .main-lodgings {
-        width: 2/3;
+        width: 65%;
     }
     .main-favorites {
-        width: 1/3;
+        width: 31%;
     }
 
     #activity-1 {
@@ -63,24 +66,23 @@
 }
 
 @media screen and (min-width:992px) {
-    .main-lodgings-thumbnail {
-        width: 32%;
-    }
     .header {
-        padding: 2.45% 4.5%;
+        padding: 54px 80px 45px 88px;
         justify-content: space-between;
     }
     .header-logo {
         width: 7%;
     }
     .header-nav-element {
-        padding: 45px 25px;
-        margin: 0 10px 0 25px;
+        padding: 42px 36px 42px 48px;
         font-size: 130%;
     }
     .header-nav-element:hover {
         border-top: 3px solid var(--blue-main);
         color: var(--blue-main);
+    }
+    .main-lodgings-thumbnail {
+        width: 30.5%;
     }
 }
 
@@ -135,7 +137,6 @@
 }
 /* switch fonts with font-weight:200 (extralight) 500 (medium) or 600 (bold) */
 
-
 a {
     text-decoration: none;
 }
@@ -149,51 +150,47 @@ ul {
     display: flex;
 }
 
-.header-nav {
-    padding-top: 0.35%;
-}
-
 .main {
     margin: 0 3.75%;
 }
 
 .main-title-div {
-    margin: 0.45% 0.8%;
+    margin: 0 15px;
 }
 
 .main-title {
-    font-size: 180%;
+    font-size: 183%;
 }
 
 .main-slogan {
-    margin: 0.70% 0;
+    margin: 10px 0;
     font-size: 130%;
 }
 
 .main-search {
-    margin: 1.5% 0.8%;
+    margin: 24px 16px;
     display: flex;
 }
 
 .main-icon {
-    padding: 1.4%;
+    padding: 22px 24px;
     font-size: 140%;
     border-radius: 30% 0 0 30%;
     background-color: var(--grey);
 }
 
 .main-input {
-    min-width: 17.5%;
+    width: 305px;
     border:2px solid var(--grey);
 }
 
 .main-button {
     background-color: var(--blue-main);
     color: whitesmoke;
-    padding: 0 1.5%;
+    padding: 0 28px;
     border:2px solid var(--grey);
     border-radius: 0 20px 20px 0;
-    font-size: 140%;
+    font-size: 135%;
     font-weight:600;
     cursor: pointer;
     transition: 200ms;
@@ -204,23 +201,26 @@ ul {
 }
 
 .main-filters {
-    margin: 2% 1.5%;
-    font-size: 130%;
+    margin: 38px 25px;
+    font-size: 128%;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
 }
 
+.main-filters-title {
+    margin-right: 45px;
+}
 
 .main-filters-button {
     border: 3px solid lightgray;
     border-radius: 50px;
     cursor: pointer; 
     background-color: white;
-    margin-left: 2%;
-    font-size: 110%;
+    margin-right: 30px;
+    font-size: 24px;
     user-select: none;
-    font-weight:bolder;
+    font-weight:600;
 }
 
 .checkbox {
@@ -231,8 +231,8 @@ ul {
     background-color: var(--blue-light);
     border-radius: 50%;
     margin-right: 10px;
-    padding: 18px;
-    font-size: 120%;
+    padding: 16px;
+    font-size: 112%;
     color: var(--blue-main);
 }
 
@@ -242,7 +242,7 @@ ul {
 
 .main-filters-box {
     cursor: pointer;
-    padding-right: 30px;
+    padding-right: 28px;
     border-radius: 50px;
 }
 
@@ -258,36 +258,52 @@ ul {
 }
 
 .main-info {
-    margin: 2.4% 1%;
+    margin: 45px 17px;
 }
 
 .main-info-icon {
     color: var(--blue-main);
     border: 2px solid lightgray;
     text-align: center;
-    padding: 0.4%;
-    min-width: 35px;
+    padding: 6px 12px;
+/*     width: 35px; */
     border-radius: 50%;
 }
 
 .main-info-text {
     font-size: 130%;
-    margin-left: 0.5%;
+    margin-left: 10px;
 }
 
 .main-products {
     display: flex;
 }
 
-.main-lodgings-titles {
-    font-size: 180%;
+.main-lodgings-thumbnail, .main-favorites-thumbnail, .main-activities-thumbnail {
+    box-shadow: 5px 5px 13px 0px #D1D3D6;
+}
+
+.main-products h3, .main-activities h3 {
+    font-size: 131.5%;
+}
+
+.main-lodgings-elements span, .main-favorites-text span {
+    font-size: 115%;
+}
+
+.main-titles {
+    font-size: 185%;
 }
 
 .main-lodgings {
     background-color: var(--grey);
     border-radius: 25px;
-    padding: 3.3% 3% 3% 3%;
-    margin-left: 0.5%;
+    padding: 56px 56px 58px 50px;
+    margin-left: 12px;
+}
+
+.main-lodgings-elements h3, .main-lodgings-elements span {
+    margin: 3px 0;
 }
 
 .main-lodgings-list {
@@ -295,20 +311,15 @@ ul {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 3% 0 2.2% 0;
-}
-
-.main-lodgings-thumbnail, .main-favorites-thumbnail, .main-activities-thumbnail {
-    box-shadow: 5px 5px 13px 0px #D1D3D6;
+    margin: 34px 0 5px 0;
 }
 
 .main-lodgings-thumbnail {
     background-color: white;
-    margin-bottom: 3.5%;
     border: 6px solid white;
+    margin-bottom: 43px;
     border-radius: 20px;
     transition: 500ms;
-    box-shadow: 5px 5px 13px 0px #D1D3D6;
 }
 
 .main-lodgings-thumbnail:hover {
@@ -318,19 +329,14 @@ ul {
 .main-lodgings-elements {
     display: flex;
     flex-direction: column;
-    margin: 5px 15px;
+    margin: 0 15px;
 }
 
-.main-lodgings-elements h3, .main-lodgings-elements span {
-    margin: 5px 0;
-
-}
 
 .main-stars i {
-    margin: 3px 0;
-    font-size: 90%;
+    margin: 10px 0;
+    font-size: 80%;
     color: var(--blue-main);
-    letter-spacing: 0;
 }
 
 .main-lodgings-image {
@@ -343,7 +349,8 @@ ul {
 .main-favorites {
     background-color: var(--grey);
     border-radius: 25px;
-    padding: 3.3% 2.8% 0;
+    padding: 58px 52px 0 48px;
+    margin: 0 8px;
 }
 
 .main-favorites-title {
@@ -353,7 +360,8 @@ ul {
 }
 
 .main-favorites-title i {
-    font-size: 170%;
+    font-size: 160%;
+    margin-right: 6px;
 }
 
 .main-favorites-list {
@@ -392,17 +400,12 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 1% 5%;
+    padding: 0 24px;
     width: 62%;
 }
 
-.main-favorites-pres {
-    font-size: 120%;
-    padding: 5% 2.5%;
-}
-
-.main-favorites-pres p {
-    margin-top: 2.5%;
+.main-favorites-pres h3 {
+    margin: 14px 0;
 }
 
 .load-more {
@@ -430,12 +433,14 @@ ul {
     justify-content: space-between;
 }
 
-.main-activities-thumbnail {
+.main-activities-thumbnail-list a {
     border: 2px solid var(--grey);
     border-radius: 30px;
+}
+
+.main-activities-thumbnail {
     transition: 500ms;
     overflow: hidden;
-    width: 385px;
 }
 
 .main-activities-thumbnail:hover {
