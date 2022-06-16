@@ -154,7 +154,7 @@
     .main-filters-box {
         font-size: 117%;
     }
-    .mobile-button {
+    #mobile-button {
         display: none;
     }
 }
@@ -169,7 +169,7 @@
     body {
         font-size: 85%;
     }
-    .desktop-button {
+    #desktop-button {
         display: none;
     }
     .main-lodgings-thumbnail {
@@ -208,7 +208,7 @@ ul {
     list-style: none;
 }
 
-.mobile-button, .desktop-button {
+#mobile-button, #desktop-button {
     color: whitesmoke;
 }
 
@@ -266,6 +266,7 @@ ul {
 
 .main-filters-title {
     margin-right: 45px;
+    font-size: 115%;
 }
 
 .main-filters-button {
