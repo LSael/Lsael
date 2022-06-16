@@ -3,12 +3,23 @@
     src: url("./font/Raleway-VariableFont_wght.ttf");
 }
 
-@media screen and (min-width:1500) {
+@media screen and (min-width:1500px) {
     .main-lodgings {
         width: 65%;
     }
     .main-favorites {
-        width: 31%;    
+        width: 31%;
+        margin: 0 8px;
+    }
+}
+
+@media screen and (min-width:1200px) and (max-width:1500px) {
+    .main-lodgings {
+        width: 55%;
+    }
+    .main-favorites {
+        width: 40%;
+        margin: 0 8px;
     }
 }
 
@@ -18,13 +29,6 @@
     }
     .main-products {
         justify-content: space-between;
-    }
-    .main-lodgings {
-        width: 55%;
-    }
-    .main-favorites {
-        width: 40%;
-        margin: 0 8px;
     }
     .main-lodgings-thumbnail {
         width: 30.5%;
@@ -126,20 +130,47 @@
 }
 
 @media screen and (min-width:768px) {
+    h3 {
+        font-size: 131.5%;
+    }
     .main {
         margin: 0 3.75%;
+    }
+    .main-title {
+        font-size: 183%;
+    }
+    .main-titles {
+        font-size: 185%;
+    }    
+    .main-slogan {
+        font-size: 130%;
+    }
+    .main-filters {
+        font-size: 128%;
+    }
+    .main-filters-icon {
+        font-size: 112%;
+    }
+    .main-filters-box {
+        font-size: 117%;
+    }
+    .mobile-button {
+        display: none;
     }
 }
 
 @media screen and (min-width:768px) and (max-width:1500px) {
-        .main-lodgings-thumbnail {
-            width: 48%;
-        }
+    .main-lodgings-thumbnail {
+        width: 48%;
+    }
 }
 
 @media screen and (max-width:768px) {
     body {
-        transform: scale(0.8) translate(0,-12%);
+        font-size: 85%;
+    }
+    .desktop-button {
+        display: none;
     }
     .main-lodgings-thumbnail {
         width: 100%;
@@ -165,6 +196,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    margin: 0 auto;
+}
+
 a {
     text-decoration: none;
 }
@@ -173,6 +208,9 @@ ul {
     list-style: none;
 }
 
+.mobile-button, .desktop-button {
+    color: whitesmoke;
+}
 
 .header {
     display: flex;
@@ -182,13 +220,8 @@ ul {
     margin: 0 15px;
 }
 
-.main-title {
-    font-size: 183%;
-}
-
 .main-slogan {
     margin: 10px 0;
-    font-size: 130%;
 }
 
 .main-search {
@@ -226,7 +259,6 @@ ul {
 
 .main-filters {
     margin: 38px 25px;
-    font-size: 128%;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -242,7 +274,6 @@ ul {
     cursor: pointer; 
     background-color: white;
     margin-right: 30px;
-    font-size: 24px;
     user-select: none;
     font-weight:600;
 }
@@ -255,9 +286,8 @@ ul {
     background-color: var(--blue-light);
     border-radius: 50%;
     margin-right: 10px;
-    padding: 16px;
-    font-size: 112%;
     color: var(--blue-main);
+    padding: 16px;
 }
 
 #familial-icon {
@@ -306,16 +336,8 @@ ul {
     box-shadow: 5px 5px 13px 0px #D1D3D6;
 }
 
-.main-products h3, .main-activities h3 {
-    font-size: 131.5%;
-}
-
 .main-lodgings-elements span, .main-favorites-text span {
     font-size: 115%;
-}
-
-.main-titles {
-    font-size: 185%;
 }
 
 .main-lodgings {
