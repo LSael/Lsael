@@ -14,7 +14,7 @@
 </head>
 <body>
     <header class="header">
-        <img class="header-logo" src="./images/logo/Booki@3x.png" />
+        <img class="header-logo" src="./images/logo/Booki@3x.png" alt="Logo"/>
         <nav class="header-nav">
             <a href="#" class="header-nav-element active">Hébergements</a>
             <a href="#activities" class="header-nav-element">Activités</a>
@@ -34,34 +34,34 @@
                 </div>
                 <div class="main-filters">
                     <h3 class="main-filters-title">Filtres</h3>
-                    <label class="main-filters-button">
+                    <div class="main-filters-button">
                         <input type="checkbox" name="Économique" id="Économique" class="checkbox">
                         <div class="main-filters-box">
                             <i class="fa-solid fa-money-bill-1-wave main-filters-icon"></i>
-                            <span for="Économique">Économique</span>
+                            <label for="Économique">Économique</label>
                         </div>
-                    </label>
-                    <label class="main-filters-button">
+                    </div>
+                    <div class="main-filters-button">
                         <input type="checkbox" name="Familial" id="Familial" class="checkbox">
                         <div class="main-filters-box">
                             <i class="fa-solid fa-child-reaching main-filters-icon" id="familial-icon"></i>
-                            <span for="Familial">Familial</span>
+                            <label for="Familial">Familial</label>
                         </div>
-                    </label>
-                    <label class="main-filters-button">
+                    </div>
+                    <div class="main-filters-button">
                         <input type="checkbox" name="Romantique" id="Romantique" class="checkbox">
                         <div class="main-filters-box">
                             <i class="fa-solid fa-heart main-filters-icon"></i>
-                            <span for="Romantique">Romantique</span>
+                            <label for="Romantique">Romantique</label>
                         </div>
-                    </label>
-                    <label class="main-filters-button">
-                        <input type="checkbox" name="Animaux autorisés" id="Animaux_autorisés" class="checkbox">
+                    </div>
+                    <div class="main-filters-button">
+                        <input type="checkbox" name="Animaux autorisés" id="Animaux-autorisés" class="checkbox">
                         <div class="main-filters-box">
                             <i class="fa-solid fa-dog main-filters-icon"></i>
-                            <span for="Animaux autorisés">Animaux autorisés</span>
+                            <label for="Animaux-autorisés">Animaux autorisés</label>
                         </div>
-                    </label>
+                    </div>
                 </div>
             </form>
             <div class="main-info">
@@ -73,25 +73,25 @@
             <div class="main-lodgings">
                 <h2 class="main-titles">Hébergements à Marseille</h2>
                 <ul class="main-lodgings-list">
-                    <a href="#" class="main-lodgings-thumbnail"><article>
-                        <li>
-                            <img src="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Cannebière" class="main-lodgings-image">
-                            <div class="main-lodgings-elements">
-                                <h3>Auberge La Cannebière</h3>
-                                <span>Nuit à partir de 25€</span>
-                                <div class="main-stars">
-                                    <i class="fa-solid fa-star plain-star"></i>
-                                    <i class="fa-solid fa-star plain-star"></i>
-                                    <i class="fa-solid fa-star plain-star"></i>
-                                    <i class="fa-solid fa-star plain-star"></i>
-                                    <i class="fa-solid fa-star empty-star"></i>
-                                </div>
+                    <li class="main-lodgings-thumbnail">
+                        <a href="#"><article>
+                        <img src="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Cannebière" class="main-lodgings-image">
+                        <div class="main-lodgings-elements">
+                            <h3>Auberge La Cannebière</h3>
+                            <span>Nuit à partir de 25€</span>
+                            <div class="main-stars">
+                                <i class="fa-solid fa-star plain-star"></i>
+                                <i class="fa-solid fa-star plain-star"></i>
+                                <i class="fa-solid fa-star plain-star"></i>
+                                <i class="fa-solid fa-star plain-star"></i>
+                                <i class="fa-solid fa-star empty-star"></i>
                             </div>
-                        </li>
-                    </article></a>
-                    <a href="#" class="main-lodgings-thumbnail">
-                        <li>
-                            <img src="./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Auberge La Cannebière" class="main-lodgings-image">
+                        </div>
+                        </article></a>
+                    </li>
+                    <li class="main-lodgings-thumbnail">
+                        <a href="#"><article>
+                            <img src="./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port" class="main-lodgings-image">
                             <div class="main-lodgings-elements">
                                 <h3>Hôtel du port</h3>
                                 <span>Nuit à partir de 52€</span>
@@ -103,11 +103,11 @@
                                     <i class="fa-solid fa-star empty-star"></i>
                                 </div>
                             </div>
-                        </li>
-                    </a>
-                    <a href="#" class="main-lodgings-thumbnail"><article>
-                        <li>
-                            <img src="./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Auberge La Cannebière" class="main-lodgings-image">
+                        </article></a>
+                    </li>
+                    <li class="main-lodgings-thumbnail">
+                            <a href="#"><article>
+                            <img src="./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel Les mouettes" class="main-lodgings-image">
                             <div class="main-lodgings-elements">
                                 <h3>Hôtel Les mouettes</h3>
                                 <span>Nuit à partir de 76€</span>
@@ -119,11 +119,11 @@
                                     <i class="fa-solid fa-star empty-star"></i>
                                 </div>
                             </div>
-                        </li>
-                    </article></a>
-                    <a href="#" class="main-lodgings-thumbnail"><article>
-                        <li>
-                            <img src="./images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Auberge La Cannebière" class="main-lodgings-image">
+                        </article></a>
+                    </li>
+                    <li class="main-lodgings-thumbnail">
+                            <a href="#"><article>
+                            <img src="./images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer" class="main-lodgings-image">
                             <div class="main-lodgings-elements">
                                 <h3>Hôtel de la mer</h3>
                                 <span>Nuit à partir de 25€</span>
@@ -135,11 +135,11 @@
                                     <i class="fa-solid fa-star empty-star"></i>
                                 </div>
                             </div>
-                        </li>
-                    </article></a>
-                    <a href="#" class="main-lodgings-thumbnail"><article>
-                        <li>
-                            <img src="./images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge La Cannebière" class="main-lodgings-image">
+                        </article></a>
+                    </li>
+                    <li class="main-lodgings-thumbnail">
+                            <a href="#"><article>
+                            <img src="./images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier" class="main-lodgings-image">
                             <div class="main-lodgings-elements">
                                 <h3>Auberge Le Panier</h3>
                                 <span>Nuit à partir de 23€</span>
@@ -151,11 +151,11 @@
                                     <i class="fa-solid fa-star empty-star"></i>
                                 </div>
                             </div>
-                        </li>
-                    </article></a>
-                    <a href="#" class="main-lodgings-thumbnail"><article>
-                        <li>
-                            <img src="./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Auberge La Cannebière" class="main-lodgings-image">
+                        </article></a>
+                    </li>
+                    <li class="main-lodgings-thumbnail">
+                            <a href="#"><article>
+                            <img src="./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina" class="main-lodgings-image">
                             <div class="main-lodgings-elements">
                                 <h3>Hôtel chez Amina</h3>
                                 <span>Nuit à partir de 96€</span>
@@ -167,8 +167,8 @@
                                     <i class="fa-solid fa-star empty-star"></i>
                                 </div>
                             </div>
-                        </li>
-                    </article></a>
+                        </article></a>
+                    </li>
                 </ul>
                 <a href="#" class="load-more"><span>Afficher plus</span></a>
             </div>
@@ -178,9 +178,9 @@
                     <i class="fa-solid fa-star"></i>
                 </div>
                 <ul class="main-favorites-list">
-                    <a href="#" class="main-favorites-thumbnail"><article>
-                        <li class="main-favorites-element">
-                            <img src="./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Auberge La Cannebière" class="main-favorites-image">
+                    <li class="main-favorites-thumbnail">
+                        <a href="#"><article>
+                            <img src="./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin" class="main-favorites-image">
                             <div class="main-favorites-text">
                                 <div class="main-favorites-pres">
                                     <h3>Hôtel Le soleil du matin</h3>
@@ -194,11 +194,11 @@
                                     <i class="fa-solid fa-star empty-star"></i>
                                 </div>
                             </div>
-                        </li>
-                    </article></a>
-                    <a href="#" class="main-favorites-thumbnail"><article>
-                        <li class="main-favorites-element">
-                            <img src="./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Auberge La Cannebière" class="main-favorites-image">
+                        </article></a>
+                    </li>
+                    <li class="main-favorites-thumbnail">
+                        <a href="#"><article>
+                            <img src="./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au cœur de l'eau Chambres d'hôtes" class="main-favorites-image">
                             <div class="main-favorites-text">
                                 <div class="main-favorites-pres">
                                     <h3>Au cœur de l'eau Chambres d'hôtes</h3>
@@ -212,11 +212,11 @@
                                     <i class="fa-solid fa-star empty-star"></i>
                                 </div>
                             </div>
-                        </li>
-                    </article></a>
-                    <a href="#" class="main-favorites-thumbnail"><article>
-                        <li class="main-favorites-element">
-                            <img src="./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Auberge La Cannebière" class="main-favorites-image">
+                        </article></a>
+                    </li>
+                    <li class="main-favorites-thumbnail">
+                            <a href="#"><article>
+                            <img src="./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et Blanc" class="main-favorites-image">
                             <div class="main-favorites-text">
                                 <div class="main-favorites-pres">
                                     <h3>Hôtel Tout bleu et Blanc</h3>
@@ -230,54 +230,50 @@
                                     <i class="fa-solid fa-star empty-star"></i>
                                 </div>
                             </div>
-                        </li>
-                    </article></a>
+                        </article></a>
+                    </li>
                 </ul>
             </aside>
         </section>
         <section class="main-activities" id="activities">
             <h2 class="main-titles">Activités à Marseille</h2>
             <ul class="main-activities-thumbnail-list">
-                <a href="#" class="main-activities-thumbnail main-activities-column"><article>
-                    <li>
+                <li class="main-activities-thumbnail">
+                        <a href="#"><article>
                         <img src="./images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port" class="main-activities-images" id="activity-1">
                         <h3>Vieux Port</h3>
-                    </li>
-                </article></a>
-                <div class="main-activities-column">
-                    <a href="#" class="main-activities-thumbnail"><article>
-                        <li>
-                            <img src="./images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues" class="main-activities-images" id="activity-2">
-                            <h3>Fort de Pomègues</h3>
-                        </li>
                     </article></a>
-                    <a href="#" class="main-activities-thumbnail"><article>
-                        <li>
+                </li>
+                <li class="main-activities-thumbnail">
+                    <a href="#"><article>
+                        <img src="./images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues" class="main-activities-images" id="activity-2">
+                        <h3>Fort de Pomègues</h3>
+                    </article></a>
+                </li>
+                <li class="main-activities-thumbnail">
+                        <a href="#"><article>
                             <img src="./images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul" class="main-activities-images" id="activity-3">
                             <h3>Îles du Frioul</h3>
-                        </li>
-                    </article></a>
-                </div>
-                <a href="#" class="main-activities-thumbnail main-activities-column"><article>
-                    <li>
+                        </article></a>
+                </li>
+                <li class="main-activities-thumbnail">
+                    <a href="#"><article>
                         <img src="./images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques" class="main-activities-images" id="activity-4">
                         <h3>Parc National des Calanques</h3>
-                    </li>
-                </article></a>
-                <div class="main-activities-column">
-                    <a href="#" class="main-activities-thumbnail"><article>
-                        <li>
-                            <img src="./images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dames-de-la-Garde" class="main-activities-images" id="activity-5">
-                            <h3>Notre-Dame-de-la-Garde</h3>
-                        </li>
                     </article></a>
-                    <a href="#" class="main-activities-thumbnail"><article>
-                        <li>
-                            <img src="./images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp" class="main-activities-images" id="activity-6">
-                            <h3>Parc Longchamp</h3>
-                        </li>
+                </li>
+                <li class="main-activities-thumbnail">
+                    <a href="#"><article>
+                        <img src="./images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde" class="main-activities-images" id="activity-5">
+                        <h3>Notre-Dame-de-la-Garde</h3>
                     </article></a>
-                </div>
+                </li>
+                <li class="main-activities-thumbnail">
+                    <a href="#"><article>
+                        <img src="./images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp" class="main-activities-images" id="activity-6">
+                        <h3>Parc Longchamp</h3>
+                    </article></a>
+                </li>
             </ul>
         </section>
     </main>

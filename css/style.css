@@ -177,7 +177,7 @@ ul {
     font-size: 24px;
 }
 
-.main-filters-box span{
+.main-filters-box label{
     font-size: 24px;
     margin-left: 10px;
 }
@@ -239,7 +239,7 @@ ul {
 }
 
 .main-lodgings-thumbnail:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .main-lodgings-elements {
@@ -292,10 +292,17 @@ ul {
     margin: 22px 0;
     border-radius: 30px;
     transition: 500ms;
+    overflow: hidden;
 }
 
+.main-favorites-thumbnail article {
+    display: flex;
+    background-color: white;
+}
+
+
 .main-favorites-thumbnail:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .main-favorites-thumbnail li {
@@ -334,10 +341,6 @@ ul {
     margin: 79px 2px;
 }
 
-.main-activities-column {
-    width: 22.75%;
-}
-
 .main-activities-title {
     font-size: 170%;
     margin-bottom: 1.8%;
@@ -345,28 +348,24 @@ ul {
 
 .main-activities-thumbnail-list {
     display: flex;
-    justify-content: space-between;
-    margin-top: 28px;
-}
-
-.main-activities-thumbnail-list div {
-    display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-between;
-}
-
-.main-activities-thumbnail-list a {
-    border: 2px solid var(--grey);
-    border-radius: 30px;
+    align-content: space-between;
+    margin-top: 28px;
+    height: 583px;
 }
 
 .main-activities-thumbnail {
+    border: 2px solid var(--grey);
+    border-radius: 30px;
     transition: 500ms;
     overflow: hidden;
+    width: 22.75%;
 }
 
 .main-activities-thumbnail:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .main-activities-thumbnail h3 {
@@ -462,13 +461,11 @@ ul {
         width: 100%;
     }
     .main-activities-thumbnail-list {
-        flex-direction: column;
+        height: 900px;
         width: 100%;
     }
-    .main-activities-column {
-        width: 100%;
-    }
-    .main-activities-thumbnail-list a, .main-activities-column a {
+    .main-activities-thumbnail {
+        width: 48.5%;
         margin-bottom: 15px;
     }
     .main-activities-images {
@@ -590,7 +587,7 @@ ul {
     .main-filters-box i {
         font-size: 16px;
     }
-    .main-filters-box span {
+    .main-filters-box label {
         font-size: 16px;
     }
     .main-info {
@@ -649,6 +646,12 @@ ul {
     .main-activities {
         margin: 54px 0px 32px;
     }
+    .main-activities-thumbnail-list {
+        height: auto;
+    }
+    .main-activities-thumbnail {
+        width: 100%;
+    }
     .main-activities-images {
         height: 135px;
     }
@@ -656,7 +659,7 @@ ul {
         padding: 16px;
         margin-left: 3px;
     }
-    .main-activities-thumbnail-list a, .main-activities-column a {
+    .main-activities-thumbnail {
         margin-bottom: 18px;
     }
     .footer {
