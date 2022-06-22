@@ -54,6 +54,7 @@ ul {
 
 .header-logo {
     width: 7%;
+    margin-left: 10px;
 }
 
 .header-nav-element {
@@ -107,7 +108,7 @@ ul {
 }
 
 .main-button:active {
-    transform: scale(0.9);
+    transform: scale(0.85);
 }
 
 #mobile-button, #desktop-button {
@@ -140,9 +141,6 @@ ul {
     font-weight:600;
 }
 
-.checkbox {
-    display: none;
-}
 
 .main-filters-icon {
     background-color: var(--blue-light);
@@ -154,6 +152,10 @@ ul {
 
 #familial-icon {
     padding: 18px 24px;
+}
+
+.checkbox {
+    display: none;
 }
 
 .main-filters-box {
@@ -168,8 +170,12 @@ ul {
 }
 
 .checkbox:checked ~ .main-filters-box {
-    color: white;
     background-color: var(--blue-main);
+    transition: 1s;
+}
+
+.checkbox:checked ~ .main-filters-box label {
+    color: white;
     transition: 1s;
 }
 
@@ -239,7 +245,7 @@ ul {
 }
 
 .main-lodgings-thumbnail:hover {
-    transform: scale(1.05);
+    transform: scale(1.075);
 }
 
 .main-lodgings-elements {
@@ -302,7 +308,7 @@ ul {
 
 
 .main-favorites-thumbnail:hover {
-    transform: scale(1.05);
+    transform: scale(1.075);
 }
 
 .main-favorites-thumbnail li {
@@ -365,7 +371,7 @@ ul {
 }
 
 .main-activities-thumbnail:hover {
-    transform: scale(1.05);
+    transform: scale(1.075);
 }
 
 .main-activities-thumbnail h3 {
