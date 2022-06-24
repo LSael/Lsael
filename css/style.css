@@ -19,7 +19,7 @@
 
 html {
     scroll-behavior: smooth;
-/*     max-width: 1366px; */
+    max-width: 1366px;
     margin: auto;
 }
 
@@ -236,13 +236,17 @@ i {
     padding: 20px 0 9px;
 }
 
+.main-lodgings-list li {
+    width: 31%;
+}
+
 .main-lodgings-thumbnail {
     background-color: white;
     border: 5px solid white;
     margin-bottom: 27px;
     border-radius: 20px;
     transition: 500ms;
-    width: 31%;
+    height: 191px;
 }
 
 .main-lodgings-thumbnail:hover {
@@ -263,7 +267,7 @@ i {
 
 .main-lodgings-image {
     width: 100%;
-    height: 109px;
+    height: 60%;
     object-fit:cover;
     border-radius: 15px 15px 0 0 ;
 }
@@ -288,19 +292,16 @@ i {
 }
 
 .main-favorites-thumbnail {
+    display: flex;
     width: 100%;
+    height: 137px;
     border: 6px solid white;
+    background-color: white;
     margin-bottom: 31px;
     border-radius: 20px;
     transition: 500ms;
     overflow: hidden;
 }
-
-.main-favorites-thumbnail article {
-    display: flex;
-    background-color: white;
-}
-
 
 .main-favorites-thumbnail:hover {
     transform: scale(1.075);
@@ -317,7 +318,7 @@ i {
     border-radius: 10px 0 0 10px;
     object-fit: cover;
     width: 38.5%;
-    min-height: 125px;
+    height: 100%;
 }
 
 .main-favorites-text {
@@ -361,12 +362,15 @@ i {
     height: 426px;
 }
 
+.main-activities-thumbnail-list li {
+    width: 22.75%;
+}
+
 .main-activities-thumbnail {
     border: 2px solid var(--grey);
     border-radius: 20px;
     transition: 500ms;
     overflow: hidden;
-    width: 22.75%;
 }
 
 .main-activities-thumbnail:hover {
@@ -480,7 +484,7 @@ i {
     .main-activities-thumbnail-list {
         height: 620px;
     }
-    .main-activities-thumbnail {
+    .main-activities-thumbnail-list li {
         width: 48.75%;
     }
     .main-activities-images {
@@ -597,9 +601,12 @@ i {
     .main-lodgings-list {
         margin-top: 5px;
     }
-    .main-lodgings-thumbnail {
+    .main-lodgings-list li {
         width: 100%;
+    }
+    .main-lodgings-thumbnail {
         margin: 9.5px 0 0;
+
     }
     .main-lodgings-elements {
         margin: 0 10px;
@@ -618,7 +625,7 @@ i {
     .main-activities-thumbnail-list {
         height: auto;
     }
-    .main-activities-thumbnail {
+    .main-activities-thumbnail-list li {
         width: 100%;
     }
     .main-activities-thumbnail h3 {
