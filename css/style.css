@@ -62,7 +62,7 @@ i {
     padding: 45px 36px 0px 25px;
 }
 
-.header-nav .active {
+.header-nav-element:hover {
     border-top: 4px solid var(--blue-main);
     color: var(--blue-main);
 }
@@ -72,7 +72,7 @@ i {
 }
 
 .main-inputs {
-    margin: 0 4px;
+    margin: 0 2px;
 }
 
 .main-title {
@@ -205,7 +205,7 @@ i {
 }
 
 .main-info-text {
-    margin-left: 11px;
+    margin-left: 7px;
 }
 
 .main-products {
@@ -257,6 +257,7 @@ i {
     display: flex;
     flex-direction: column;
     margin: 0 10px;
+    height: 40%;
 }
 
 .main-stars i {
@@ -291,6 +292,12 @@ i {
     justify-content: space-between;
 }
 
+.main-favorites-thumbnail li {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+
 .main-favorites-thumbnail {
     display: flex;
     width: 100%;
@@ -307,12 +314,6 @@ i {
     transform: scale(1.075);
 }
 
-.main-favorites-thumbnail li {
-    display: flex;
-    flex-direction: row;
-    background-color: white;
-    border-radius: 20px;
-}
 
 .main-favorites-image {
     border-radius: 10px 0 0 10px;
@@ -481,6 +482,9 @@ i {
     .main-lodgings {
         width: 100%;
     }
+    .main-lodgings-list li {
+        width: 48.75%;
+    }
     .main-activities-thumbnail-list {
         height: 620px;
     }
@@ -584,7 +588,8 @@ i {
         margin-bottom: 38px;
     }
     .main-favorites-thumbnail {
-        margin: 10.5px 0 0 0;
+        margin: 0 0 8px 0;
+        height: 147px;
     }
     .main-favorites-title i {
         font-size: 125%;
@@ -600,13 +605,14 @@ i {
     }
     .main-lodgings-list {
         margin-top: 5px;
+        padding: 2px 0 9px;
     }
     .main-lodgings-list li {
         width: 100%;
     }
     .main-lodgings-thumbnail {
-        margin: 9.5px 0 0;
-
+        margin: 9.5px 0 0;  
+        height: 202px;
     }
     .main-lodgings-elements {
         margin: 0 10px;
@@ -617,13 +623,14 @@ i {
     .load-more span {
         display: block;
         font-size: 18px;
-        margin: 30px 0 0 0;
+        margin: 20px 0 0 0;
     }
     .main-activities {
         margin: 54px 0px 32px;
     }
     .main-activities-thumbnail-list {
         height: auto;
+        margin-top: 28px;
     }
     .main-activities-thumbnail-list li {
         width: 100%;
@@ -641,7 +648,7 @@ i {
         padding: 23px 0;
     }
     .footer-about {
-        padding: 22px 31px;
+        padding: 24px 31px;
     }
     .footer-about h3 {
         font-size: 18px;
