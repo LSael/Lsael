@@ -463,7 +463,7 @@ i {
         padding: 17px 0 12px;
         width: 100%;
     }
-    .header-nav .active {
+    .header-nav-element:hover {
         border-bottom: 3px solid var(--blue-main);
         border-top: none;
         color: var(--blue-main);
