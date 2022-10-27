@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Lsael/static/css/main.52a394e3.css",
-    "main.js": "/Lsael/static/js/main.f735099f.js",
+    "main.js": "/Lsael/static/js/main.3405dfaa.js",
     "static/media/home-banner.png": "/Lsael/static/media/home-banner.efc1935eb81fc5e585f9.png",
     "index.html": "/Lsael/index.html",
     "main.52a394e3.css.map": "/Lsael/static/css/main.52a394e3.css.map",
-    "main.f735099f.js.map": "/Lsael/static/js/main.f735099f.js.map"
+    "main.3405dfaa.js.map": "/Lsael/static/js/main.3405dfaa.js.map"
   },
   "entrypoints": [
     "static/css/main.52a394e3.css",
-    "static/js/main.f735099f.js"
+    "static/js/main.3405dfaa.js"
   ]
 }
